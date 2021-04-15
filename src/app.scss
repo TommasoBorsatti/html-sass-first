@@ -1,0 +1,26 @@
+
+// FONT-SIZE
+
+$small: 14px;
+$medium: 18px;
+$big: 24px;
+$large: 35px;
+
+//COLORS
+
+$primary: blue;
+$secondary: green;
+$other: coral;
+
+// STRUCTURE
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+
+body{
+  background-color: $primary;
+}
