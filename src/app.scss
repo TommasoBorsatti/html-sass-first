@@ -1,16 +1,94 @@
 
 // FONT-SIZE
 
-$small: 14px;
+$small: 16px;
 $medium: 18px;
 $big: 24px;
 $large: 35px;
 
 //COLORS
 
-$primary: blue;
-$secondary: green;
-$other: coral;
+$primary: #83B5D1;
+$secondary: #FFF;
+$other: #726E97;
+
+//SPACING
+
+$pdNarrow: 2px 2px;
+$pdMedium: 5px 6px;
+$pdWide: 8px 10px;
+$pdSuper: 20px 12px 40px;
+$mgNarrow: 2px 2px;
+$mgMedium: 5px 6px;
+$mgWide: 15px 10px;
+$mgSuper: 20px 12px 40px;
+
+// EFFECTS
+
+$shadow: 2px 2px 2px #7698B3;
+$wide: 2px;
+
+// TYPO:
+
+h1{
+  font-size: $large;
+  color: $secondary;
+  text-transform: uppercase;
+  text-shadow: $shadow;
+  margin: $mgWide;
+  text-decoration: underline;
+}
+
+h2{
+  font-size: $medium;
+  color: $secondary;
+  text-shadow: $shadow;
+  text-transform: uppercase;
+  letter-spacing: $wide;
+  margin: $mgWide;
+}
+
+h3{
+  font-size: $medium;
+  color: $other;
+  margin: $mgMedium;
+  font-style: italic;
+}
+
+p,
+h5{
+  font-size: $small;
+  color: $secondary;
+  text-shadow: $shadow;
+  letter-spacing: 3px;
+  padding: $mgMedium;
+}
+
+// BUTTONS, INPUT, LINKS
+
+button{
+  cursor: pointer;
+  background-color: $other;
+  color: $secondary;
+  text-shadow: $shadow;
+  border: none;
+  border-radius: 15px;
+  padding: $pdMedium;
+  margin: $mgSuper;
+  transition: all 0.4s
+}
+
+a{
+  text-decoration: none;  
+}
+
+button:focus{
+  outline: none
+}
+
+button:hover{
+  transform: scale(1.2);
+}
 
 // STRUCTURE
 
@@ -20,7 +98,20 @@ $other: coral;
   padding: 0;
 }
 
-
 body{
   background-color: $primary;
+}
+
+header,
+main,
+footer{
+  text-align: center;
+}
+
+header{
+  padding: $pdWide;
+}
+
+footer{
+  padding: $pdSuper
 }
